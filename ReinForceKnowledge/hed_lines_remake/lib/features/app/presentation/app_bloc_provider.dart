@@ -1,7 +1,17 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hed_lines_remake/features/auth/presentation/bloc/auth_bloc.dart';
+
+import 'bloc/app_bloc.dart';
 
 class AppBlocPovider {
-  static final List<BlocProvider> providers = [];
+  static final List<BlocProvider> providers = [
+    BlocProvider<AppBloc>(
+      create: (context) => AppBloc(),
+    ),
+    BlocProvider<AuthBloc>(
+      create: (context) => AuthBloc(),
+    )
+  ];
 
   static void dispose() {}
 

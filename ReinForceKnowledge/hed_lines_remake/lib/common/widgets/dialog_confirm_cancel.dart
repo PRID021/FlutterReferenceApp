@@ -1,9 +1,8 @@
-import 'package:askany/src/configs/lang/localization.dart';
-import 'package:askany/src/routes/app_pages.dart';
-import 'package:askany/src/ui/common/widgets/button_widgets/touchable_opacity.dart';
-import 'package:askany/src/ui/style/style.dart';
 import 'package:flutter/material.dart';
-import 'package:askany/src/helpers/sizer_custom/sizer.dart';
+import 'package:hed_lines_remake/common/widgets/touchable_opacity.dart';
+
+import '../../core/routes/app_pages.dart';
+import '../style/app_styles.dart';
 
 class DialogConfirmCancel extends StatelessWidget {
   const DialogConfirmCancel(
@@ -43,14 +42,14 @@ class DialogConfirmCancel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-        top: 20.sp,
-        right: 22.sp,
-        bottom: 8.sp,
-        left: 22.sp,
+        top: 20,
+        right: 22,
+        bottom: 8,
+        left: 22,
       ),
       decoration: BoxDecoration(
-        color: colorDialogBackGround,
-        borderRadius: BorderRadius.circular(10.sp),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -60,18 +59,18 @@ class DialogConfirmCancel extends StatelessWidget {
               ? Text(
                   title!,
                   style: TextStyle(
-                    fontSize: 15.sp,
+                    fontSize: 15,
                     color: titleColor,
                     fontWeight: FontWeight.w600,
                     height: 1.36,
                   ),
                 )
               : SizedBox(),
-          title != null ? SizedBox(height: 8.sp) : SizedBox(),
+          title != null ? SizedBox(height: 8) : SizedBox(),
           RichText(
             textAlign: beforeTextAlign,
             text: TextSpan(
-              style: TextStyle(fontSize: 13.sp, height: 1.625),
+              style: TextStyle(fontSize: 13, height: 1.625),
               children: [
                 TextSpan(
                   text: bodyBefore,
@@ -99,9 +98,9 @@ class DialogConfirmCancel extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 8.sp),
+          SizedBox(height: 8),
           Container(
-            height: 48.sp,
+            height: 48,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -113,20 +112,20 @@ class DialogConfirmCancel extends StatelessWidget {
                           cancelText!.toUpperCase(),
                           style: TextStyle(
                             color: colorBlack2,
-                            fontSize: 12.sp,
+                            fontSize: 12,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
                     : SizedBox(),
-                SizedBox(width: 38.sp),
+                SizedBox(width: 38),
                 TouchableOpacity(
                   onTap: onConfirmed,
                   child: Text(
-                    confirmText ?? Strings.confirm.i18n.toUpperCase(),
+                    confirmText ?? 'Strings.confirm.i18n.toUpperCase()',
                     style: TextStyle(
                       color: colorGreen2,
-                      fontSize: 13.sp,
+                      fontSize: 13,
                       fontWeight: FontWeight.w700,
                       shadows: hasTextShadow
                           ? <Shadow>[

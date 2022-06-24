@@ -5,6 +5,7 @@ import 'package:hed_lines_remake/core/routes/scaffold_wrapper.dart';
 import 'package:hed_lines_remake/core/routes/transition_route.dart';
 
 import '../../features/app/presentation/app.dart';
+import 'app_navigator_observer.dart';
 import 'app_routes.dart';
 
 class AppNavigator extends RouteObserver<PageRoute<dynamic>> {
@@ -81,5 +82,4 @@ class AppNavigator extends RouteObserver<PageRoute<dynamic>> {
   static BuildContext? get context => navigatorKey.currentContext;
 
   static NavigatorState get state => navigatorKey.currentState!;
-}
 }

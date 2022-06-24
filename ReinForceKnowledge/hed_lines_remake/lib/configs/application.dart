@@ -5,6 +5,7 @@ class Application {
   /// [Production - Dev]
   static String baseUrl = ApiGateway.baseURL;
   static const String mode = "DEV";
+  static bool isShowingError = false;
   Future<void> initialAppLication(BuildContext context) async {
     try {} catch (error) {
       debugPrint(error.toString());

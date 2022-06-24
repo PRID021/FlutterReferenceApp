@@ -29,6 +29,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
 
   
@@ -36,6 +38,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   bloc: ^8.0.3
   flutter_bloc: ^8.0.1
+  i18n_extension: ^4.2.0
+  hive: ^2.2.2
+  path_provider: ^2.0.11
 
 dev_dependencies:
   flutter_test:
@@ -54,14 +59,25 @@ dev_dependencies:
 
 
 flutter:
-
-  
-  
-  
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+    - assets/audio/
+    - assets/images/svg/
 
-  
-  
+  fonts:
+    - family: SourceCodePro
+      fonts:
+        - asset: assets/fonts/SourceCodePro-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SourceCodePro-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SourceCodePro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SourceCodePro-Bold.ttf
+          weight: 700
   
   
 

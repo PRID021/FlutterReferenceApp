@@ -1,8 +1,7 @@
-import 'package:askany/src/configs/application.dart';
-import 'package:askany/src/models/slide_mode.dart';
-import 'package:askany/src/routes/app_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:askany/src/helpers/sizer_custom/sizer.dart';
+import '../../configs/application.dart';
+import '../../constants/slide_mode.dart';
+import '../../core/routes/app_pages.dart';
 
 Future dialogAnimationWrapper({
   SlideMode slideFrom = SlideMode.left,
@@ -58,7 +57,7 @@ Future dialogAnimationWrapper({
           bottom: paddingBottom,
         ),
         child: Container(
-          constraints: BoxConstraints(maxWidth: 330.sp),
+          constraints: BoxConstraints(maxWidth: 330),
           child: child,
         ),
         backgroundColor: backgroundColor,
