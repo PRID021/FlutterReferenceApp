@@ -27,7 +27,7 @@ class DialogSignOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 20,
         right: 22,
         bottom: 8,
@@ -52,8 +52,8 @@ class DialogSignOut extends StatelessWidget {
                   ),
                 )
               : const SizedBox(),
-          title != null ? SizedBox(height: 8) : const SizedBox(),
-          SizedBox(height: 8),
+          title != null ? const SizedBox(height: 8) : const SizedBox(),
+          const SizedBox(height: 8),
           bodyText != null
               ? Text(
                   bodyText!,
@@ -61,7 +61,7 @@ class DialogSignOut extends StatelessWidget {
                   textAlign: TextAlign.center,
                 )
               : const SizedBox(),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           SizedBox(
             width: 180,
             height: 36,
@@ -78,7 +78,7 @@ class DialogSignOut extends StatelessWidget {
               textStyle: text14w700Blue.copyWith(color: colorWhite),
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           SizedBox(
             width: 180,
             height: 36,
@@ -93,7 +93,7 @@ class DialogSignOut extends StatelessWidget {
               textStyle: text14w700Blue,
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
         ],
       ),
     );

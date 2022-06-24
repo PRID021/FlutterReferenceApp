@@ -4,6 +4,8 @@ class SearchBar extends StatelessWidget {
   final pink = const Color(0xFFFACCCC);
   final grey = const Color(0xFFF2F2F7);
 
+  const SearchBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(

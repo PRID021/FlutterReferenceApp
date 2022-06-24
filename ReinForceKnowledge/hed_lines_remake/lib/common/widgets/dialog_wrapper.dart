@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../configs/application.dart';
 import '../../constants/slide_mode.dart';
 import '../../core/routes/app_pages.dart';
@@ -16,19 +17,19 @@ Future dialogAnimationWrapper({
   barrierColor,
   timeForDismiss,
 }) {
-  var beginOffset = Offset(-1, 0);
+  var beginOffset = const Offset(-1, 0);
   switch (slideFrom) {
     case SlideMode.left:
-      beginOffset = Offset(-1, 0);
+      beginOffset = const Offset(-1, 0);
       break;
     case SlideMode.right:
-      beginOffset = Offset(1, 0);
+      beginOffset = const Offset(1, 0);
       break;
     case SlideMode.top:
-      beginOffset = Offset(0, -1);
+      beginOffset = const Offset(0, -1);
       break;
     default:
-      beginOffset = Offset(0, 1);
+      beginOffset = const Offset(0, 1);
       break;
   }
 
@@ -57,7 +58,7 @@ Future dialogAnimationWrapper({
           bottom: paddingBottom,
         ),
         child: Container(
-          constraints: BoxConstraints(maxWidth: 330),
+          constraints: const BoxConstraints(maxWidth: 330),
           child: child,
         ),
         backgroundColor: backgroundColor,
@@ -65,7 +66,7 @@ Future dialogAnimationWrapper({
     },
     transitionBuilder: (_, anim, __, child) {
       return SlideTransition(
-        position: Tween(begin: beginOffset, end: Offset(0, 0)).animate(anim),
+        position: Tween(begin: beginOffset, end: const Offset(0, 0)).animate(anim),
         child: child,
       );
     },

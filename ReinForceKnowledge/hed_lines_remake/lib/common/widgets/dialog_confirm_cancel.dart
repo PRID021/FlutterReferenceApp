@@ -41,7 +41,7 @@ class DialogConfirmCancel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 20,
         right: 22,
         bottom: 8,
@@ -65,12 +65,12 @@ class DialogConfirmCancel extends StatelessWidget {
                     height: 1.36,
                   ),
                 )
-              : SizedBox(),
-          title != null ? SizedBox(height: 8) : SizedBox(),
+              : const SizedBox(),
+          title != null ? const SizedBox(height: 8) : const SizedBox(),
           RichText(
             textAlign: beforeTextAlign,
             text: TextSpan(
-              style: TextStyle(fontSize: 13, height: 1.625),
+              style: const TextStyle(fontSize: 13, height: 1.625),
               children: [
                 TextSpan(
                   text: bodyBefore,
@@ -87,7 +87,7 @@ class DialogConfirmCancel extends StatelessWidget {
                           color: highlightColor,
                         ),
                       )
-                    : TextSpan(),
+                    : const TextSpan(),
                 TextSpan(
                   text: bodyAfter,
                   style: TextStyle(
@@ -98,8 +98,8 @@ class DialogConfirmCancel extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 8),
-          Container(
+          const SizedBox(height: 8),
+          SizedBox(
             height: 48,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -110,15 +110,15 @@ class DialogConfirmCancel extends StatelessWidget {
                         onTap: () => AppNavigator.pop(),
                         child: Text(
                           cancelText!.toUpperCase(),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: colorBlack2,
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                       )
-                    : SizedBox(),
-                SizedBox(width: 38),
+                    : const SizedBox(),
+                const SizedBox(width: 38),
                 TouchableOpacity(
                   onTap: onConfirmed,
                   child: Text(
@@ -130,7 +130,7 @@ class DialogConfirmCancel extends StatelessWidget {
                       shadows: hasTextShadow
                           ? <Shadow>[
                               Shadow(
-                                offset: Offset(2.0, 3.0),
+                                offset: const Offset(2.0, 3.0),
                                 blurRadius: 2.0,
                                 color: Colors.grey.shade300,
                               ),

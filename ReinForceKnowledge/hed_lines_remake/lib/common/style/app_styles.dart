@@ -9,7 +9,7 @@ final AppBar appBarCalendar = AppBar(
   ),
 );
 
-final Divider dividerCalendar = Divider(
+const Divider dividerCalendar = Divider(
   color: colorDividerTimeline,
   thickness: 0.2,
   height: 0.2,
@@ -20,7 +20,7 @@ final Divider dividerCalendar = Divider(
 final Widget dividerThinkness6 = Container(
   height: 6,
   color: backgroundDetails,
-  margin: EdgeInsets.only(top: 2, bottom: 10),
+  margin: const EdgeInsets.only(top: 2, bottom: 10),
 );
 
 final Widget dividerThinkness6NotMargin = Container(
@@ -79,155 +79,155 @@ const Color colorChosenCard = Color(0xFFF0F6F6);
 const Color colorNotChosenCard = Color(0xFFF7E8E8);
 
 const colorWhite = Color(0xFFFFFFFF);
-const colorDisalbeTimeButton = Color(0xFFF5F5F5);
+const colorDisableTimeButton = Color(0xFFF5F5F5);
 var backgroundPrimaryColor = const Color(0xFF0953AD);
 const colorDialogBackGround = Color(0xFFFFFFFF);
 
-final TextStyle text13w400cBlack2 = TextStyle(
+const TextStyle text13w400cBlack2 = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w400,
   color: colorBlack2,
 );
-final TextStyle text14w600cBlack2 = TextStyle(
+
+const TextStyle text14w600cBlack2 = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w600,
   color: colorBlack2,
 );
-final TextStyle text14w700cBlack1 = TextStyle(
+const TextStyle text14w700cBlack1 = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w700,
   color: colorBlack1,
 );
-final TextStyle text14w700cBlack2 = TextStyle(
+const TextStyle text14w700cBlack2 = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w700,
   color: colorBlack2,
 );
-final TextStyle text12w600cBlack2 = TextStyle(
+const TextStyle text12w600cBlack2 = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w600,
   color: colorBlack2,
 );
-final TextStyle text12w400cFontGreen = TextStyle(
+const TextStyle text12w400cFontGreen = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w400,
   color: colorFontGreen,
 );
-final TextStyle text12w400cFinished = TextStyle(
+const TextStyle text12w400cFinished = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w400,
   color: colorFinished,
 );
-final TextStyle text13w600cBlack2 = TextStyle(
+const TextStyle text13w600cBlack2 = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w600,
   color: colorBlack2,
 );
-final TextStyle text13w700cWhite = TextStyle(
+const TextStyle text13w700cWhite = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w700,
   color: colorWhite,
 );
 
-final TextStyle text10w400cGray2 = TextStyle(
+const TextStyle text10w400cGray2 = TextStyle(
   fontSize: 10,
   fontWeight: FontWeight.w400,
   color: colorGray2,
 );
-final TextStyle text13w400cGray2 = TextStyle(
+const TextStyle text13w400cGray2 = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w400,
   color: colorGray2,
 );
-final TextStyle text15w700cBlack2 = TextStyle(
+const TextStyle text15w700cBlack2 = TextStyle(
   fontSize: 15,
   fontWeight: FontWeight.w700,
   color: colorBlack2,
 );
-final TextStyle text13w700cGray1 = TextStyle(
+const TextStyle text13w700cGray1 = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w700,
   color: colorGray1,
 );
-final TextStyle text13w400cGreen2 = TextStyle(
+const TextStyle text13w400cGreen2 = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w400,
   color: colorGreen2,
 );
-final TextStyle text13w400cFontGreen = TextStyle(
+const TextStyle text13w400cFontGreen = TextStyle(
   fontSize: 13,
   fontWeight: FontWeight.w400,
   color: colorFontGreen,
 );
-final TextStyle text13w400cRed = TextStyle(
+const TextStyle text13w400cRed = TextStyle(
   fontSize: 10.5,
   fontWeight: FontWeight.w400,
-  color: const Color(0xffB31D1D),
+  color: Color(0xffB31D1D),
 );
 
-final TextStyle text56w400Blue = TextStyle(
+const TextStyle text56w400Blue = TextStyle(
   fontSize: 53,
   fontWeight: FontWeight.w400,
   letterSpacing: 1,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );
-final TextStyle text20w400Blue = TextStyle(
+const TextStyle text20w400Blue = TextStyle(
   fontSize: 17,
   fontWeight: FontWeight.w400,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text14w500Blue = TextStyle(
-  fontSize: 12,
+const TextStyle text14w500Blue = TextStyle(
   fontWeight: FontWeight.w500,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text24w700Blue = TextStyle(
+const TextStyle text24w700Blue = TextStyle(
   fontSize: 21,
   fontWeight: FontWeight.w700,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text14w700Blue = TextStyle(
+const TextStyle text14w700Blue = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w700,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text24w700Black = TextStyle(
+const TextStyle text24w700Black = TextStyle(
   fontSize: 21,
   fontWeight: FontWeight.w700,
   color: colorBlack1,
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text10w400Black = TextStyle(
+const TextStyle text10w400Black = TextStyle(
   fontSize: 8.5,
   fontWeight: FontWeight.w500,
   color: colorBlack1,
   fontStyle: FontStyle.normal,
 );
-final TextStyle text14w500Black = TextStyle(
+const TextStyle text14w500Black = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w500,
   color: colorBlack1,
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text14w700White = TextStyle(
+const TextStyle text14w700White = TextStyle(
   fontSize: 12,
   fontWeight: FontWeight.w500,
   color: colorWhite,
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text10w700White = TextStyle(
+const TextStyle text10w700White = TextStyle(
   fontSize: 8.5,
   fontWeight: FontWeight.w700,
   color: colorWhite,
@@ -240,16 +240,16 @@ final TextStyle text10w400Blue = TextStyle(
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text14w500Grey = TextStyle(
+const TextStyle text14w500Grey = TextStyle(
   fontSize: 11,
   fontWeight: FontWeight.w500,
-  color: const Color(0xff999999),
+  color: Color(0xff999999),
   fontStyle: FontStyle.normal,
 );
 
-final TextStyle text16w600Blue = TextStyle(
+const TextStyle text16w600Blue = TextStyle(
   fontSize: 12.5,
   fontWeight: FontWeight.w600,
-  color: const Color(0xff0953AD),
+  color: Color(0xff0953AD),
   fontStyle: FontStyle.normal,
 );

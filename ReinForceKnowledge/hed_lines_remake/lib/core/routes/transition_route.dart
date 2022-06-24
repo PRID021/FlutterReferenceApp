@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hed_lines_remake/core/routes/app_routes.dart';
 
+import '../../configs/constants.dart';
 import 'app_pages.dart';
-
-int DELAY_250_MS = 250;
 
 class AppMaterialPageRoute<T> extends MaterialPageRoute<T> {
   AppMaterialPageRoute({
@@ -12,13 +11,14 @@ class AppMaterialPageRoute<T> extends MaterialPageRoute<T> {
   }) : super(builder: builder, settings: settings);
 
   @override
-  Duration get transitionDuration => Duration(
+  Duration get transitionDuration => const Duration(
         milliseconds: DELAY_250_MS,
       );
 
+  @override
   @protected
   bool get hasScopedWillPopCallback {
-    return [Routes.ROOT, Routes.EDIT_PHOTO, Routes.EDIT_PHOTO_MESSAGE].contains(AppNavigator.currentRoute());
+    return [Routes.ROOT].contains(AppNavigator.currentRoute());
   }
 
   @override
