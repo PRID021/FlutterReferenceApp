@@ -1,15 +1,20 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'core/utils/logger.dart';
 import 'features/app/presentation/app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.black,
+    statusBarColor: Colors.transparent,
+  ));
 
   BlocOverrides.runZoned(
     () {
-      runApp(App());
+      runApp(const App());
     },
     blocObserver: AppBlocObserver(),
   );

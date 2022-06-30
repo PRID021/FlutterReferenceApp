@@ -1,7 +1,4 @@
-import 'package:bunny_appbar/search_bar.dart';
 import 'package:flutter/material.dart';
-
-import 'background_waves_clipper.dart';
 import 'sliver_search_appbar.dart';
 
 void main() {
