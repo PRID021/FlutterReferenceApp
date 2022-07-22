@@ -1,0 +1,54 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "hello": "Hello {userName}",
+  "@hello": {
+    "description": "The conventional newborn programmer greeting",
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "numberOfDataPoints": "Number of data points: {value}",
+  "@numberOfDataPoints": {
+    "description": "The number of data points",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "example": "10",
+        "format": "currency",
+        "optionalParameters": {
+          "decimalDigits": 5
+        }
+      }
+    }
+  },
+  "helloWorldOn": "Hello World on {date}",
+  "@helloWorldOn": {
+    "description": "A message with a date parameter",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  },
+  "nWombats": "{count,plural, =0{no {thing}} =1{a {thing}} other{{count} {thing}s}}",
+  "@nWombats": {
+    "description": "The number of wombats",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10"
+      },
+      "thing": {
+        "example": "wombat"
+      }
+    }
+  }
+}

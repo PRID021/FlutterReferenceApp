@@ -3,5 +3,9 @@
         "appbar",
         "Cupertino",
         "HEDLINES"
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "explorer.compactFolders": false
 }
